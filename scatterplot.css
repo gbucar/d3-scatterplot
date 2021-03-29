@@ -1,0 +1,55 @@
+body {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    grid-template-areas:
+    "chart info";
+    align-items: center;
+    justify-content: center;
+}
+
+#tooltip {
+    position: fixed;
+    z-index: 100;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 3px;
+    white-space: pre;
+    border: 0.24px solid black;
+}
+
+circle:hover {
+    stroke: rgb(0, 39, 43);
+    stroke-width: 3px;
+    z-index: 1000;
+}
+
+#scatterplot {
+    grid-area: chart;
+}
+
+#info {
+    grid-area: info;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+
+g {
+    font-size: 100%;
+}
+
+#red {
+    padding: 3px;
+    border-radius: 5px;
+    margin-top: 3px;
+    background-color: rgb(84, 105, 111) ;
+    color: white;
+}
+#black {
+    padding: 3px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
